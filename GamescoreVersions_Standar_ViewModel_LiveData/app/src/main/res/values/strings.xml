@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GamescoreVersions</string>
+    <string name="team_a_score">TEAM A SCORE</string>
+    <string name="team_b_score">TEAM B SCORE</string>
+    <string name="result_text_display">TEAM A %d\n\n VS\n\n TEAM B %d</string>
+    <string name="back_to_main_menu">Back to Main Menu</string>
+    <string name="tema_name">team_name</string>
+    <string name="winner_team_a">El equipo A ha ganado</string>
+    <string name="winner_team_b">El equipo B ha ganado</string>
+    <string name="draw">Empate</string>
+</resources>

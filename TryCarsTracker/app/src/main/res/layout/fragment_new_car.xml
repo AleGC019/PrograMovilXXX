@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.car.newcar.NewCarFragment">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.trycarstracker.ui.car.viewmodel.CarViewModel" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NUEVO CARRO"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="40dp">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/calification"
+            android:hint="@string/hint_new_carname"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newcarname"
+                android:text="@={viewModel.carname}"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:hint="@string/hint_brand"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newcarbrand"
+                android:text="@={viewModel.brand}"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/calification"
+            android:hint="@string/hint_modelo"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newcarmodel"
+                android:layout_width="match_parent"
+                android:text="@={viewModel.model}"
+                android:inputType="text"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:hint="@string/hint_annio"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newcarannio"
+                android:layout_width="match_parent"
+                android:text="@={viewModel.year}"
+                android:inputType="number"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/calification"
+            android:hint="@string/hint_url"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newcarimage"
+                android:layout_width="match_parent"
+                android:text="@={viewModel.image}"
+                android:inputType="text"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:hint="@string/hint_description"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newcardescription"
+                android:layout_width="match_parent"
+                android:text="@={viewModel.description}"
+                android:inputType="text"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_new_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Carro"
+            android:textStyle="bold"
+            android:backgroundTint="@color/buttonColor"
+            android:cornerRadius="4dp"
+            android:layout_marginTop="16dp">
+
+        </Button>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

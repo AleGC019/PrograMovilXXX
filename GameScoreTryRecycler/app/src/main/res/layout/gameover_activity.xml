@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".GameOverActivity">
+
+    <TextView
+        android:id="@+id/display_result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-light"
+        android:textSize="40sp"
+        android:text="@string/result_text_display" />
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-light"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="@string/back_to_main_menu"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/black">
+
+
+        <TextView
+            android:id="@+id/display_winner_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="0"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:padding="8dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

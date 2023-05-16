@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TryCarsTracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_car">Hyundai Alejandro</string>
+    <string name="car_brand">Hyundai</string>
+    <string name="car_model">Elantra</string>
+    <string name="tx_car_name">Cualquier cosa</string>
+    <string name="tx_car_brand">Hyundai</string>
+    <string name="tx_car_model">Elantra</string>
+    <string name="tx_car_year">2022</string>
+    <string name="tx_car_description">El Hyundai Elantra es un carro bonito</string>
+    <string name="hint_new_carname">Car name</string>
+    <string name="hint_brand">Marca</string>
+    <string name="hint_modelo">Modelo</string>
+    <string name="hint_annio">Año</string>
+    <string name="hint_url">URL imagen</string>
+    <string name="hint_description">Descripción</string>
+</resources>

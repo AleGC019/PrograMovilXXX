@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.car.CarFragment">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.trycarstracker.ui.car.viewmodel.CarViewModel" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_car_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/inf"
+            app:shapeAppearanceOverlay="@style/roundImageview02">
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+        <TextView
+            android:id="@+id/tv_car_name"
+            android:text="@={viewModel.carname}"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+        </TextView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_car_brand"
+
+                android:text="@={viewModel.brand}"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/lightblue"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_car_model"
+
+                android:text="@={viewModel.model}"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@color/blue"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_car_year"
+
+                android:text="@={viewModel.year}"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/lightblue"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_car_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@={viewModel.description}">
+
+        </TextView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
+

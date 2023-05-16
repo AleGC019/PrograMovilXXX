@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".views.GameOverActivity">
+
+    <TextView
+        android:id="@+id/display_result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/large_text_size"
+        android:text="@string/result_text_display" />
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        android:text="@string/back_to_main_menu"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="@dimen/large_margin"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardBackgroundColor="@color/green">
+
+
+        <TextView
+            android:id="@+id/display_winner_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size"
+            android:gravity="center"
+            android:padding="@dimen/small_padding"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

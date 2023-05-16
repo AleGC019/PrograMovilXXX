@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/carsShowFragment">
+
+    <fragment
+        android:id="@+id/carFragment"
+        android:name="com.example.refreshknowledge.ui.car.CarFragment"
+        android:label="fragment_car"
+        tools:layout="@layout/fragment_car" >
+        <action
+            android:id="@+id/action_carFragment_to_carsShowFragment"
+            app:destination="@id/carsShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newCarFragment"
+        android:name="com.example.refreshknowledge.ui.car.newcar.NewCarFragment"
+        android:label="fragment_new_car"
+        tools:layout="@layout/fragment_new_car" >
+        <action
+            android:id="@+id/action_newCarFragment_to_carsShowFragment"
+            app:destination="@id/carsShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carsShowFragment"
+        android:name="com.example.refreshknowledge.ui.car.showcars.CarsShowFragment"
+        android:label="fragment_cars_show"
+        tools:layout="@layout/fragment_cars_show" >
+        <action
+            android:id="@+id/action_carsShowFragment_to_carFragment"
+            app:destination="@id/carFragment"
+            app:enterAnim="@android:anim/accelerate_decelerate_interpolator"
+            app:exitAnim="@android:anim/accelerate_interpolator" />
+        <action
+            android:id="@+id/action_carsShowFragment_to_newCarFragment"
+            app:destination="@id/newCarFragment" />
+    </fragment>
+</navigation>

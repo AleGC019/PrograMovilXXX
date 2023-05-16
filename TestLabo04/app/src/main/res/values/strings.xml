@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Prueba laboratorio 04</string>
+    <string name="write_name_hint">Nombre</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="save_hint">Guardar</string>
+    <string name="indicacion_text">Rellena la siguiente información</string>
+    <string name="nombre_field">Nombre: %s</string>
+    <string name="email_field">Email: %s</string>
+    <string name="phone_number_field">Phone number: %s</string>
+</resources>
